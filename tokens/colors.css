@@ -1,25 +1,42 @@
 /**
  * Media Diet — Color Tokens
- * Three colors only: black, white, cyan.
- * Cyan is a highlight only — minimal use, on black/photo backgrounds, never on white.
+ * Sourced from app/assets/styles/_vars.scss (media-diet-website repo, Lucas Drummond)
+ * Site: ourmediadiet.org
  */
 :root {
-  --md-black:   #000000;
-  --md-white:   #FFFFFF;
-  --md-cyan:    #00FFFF;  /* highlight only — never on white backgrounds */
+  /* Core surfaces */
+  --md-offblack:    #141414;  /* site background — NOT pure black */
+  --md-offwhite:    #F0F1F4;  /* site text — NOT pure white */
+  --md-white:       #FFFFFF;  /* high-contrast contexts only */
+  --md-tan:         #E8E1D4;  /* warm secondary surface */
+  --md-darkgrey:    #313131;  /* elevated surfaces */
 
-  /* Utility grays — for text hierarchy, not surfaces */
-  --md-gray-10: #1A1A1A;
-  --md-gray-30: #4D4D4D;
-  --md-gray-60: #999999;
-  --md-gray-90: #E5E5E5;
+  /* Text */
+  --md-grey:        #666666;  /* secondary/metadata text */
+  --md-lightgrey:   #C4C4C4;  /* tertiary/disabled */
 
-  /* Semantic */
-  --md-bg-primary:      var(--md-black);
-  --md-bg-secondary:    var(--md-gray-10);
-  --md-text-primary:    var(--md-white);
-  --md-text-secondary:  var(--md-gray-60);
-  --md-text-highlight:  var(--md-cyan);
-  --md-border-default:  rgba(255, 255, 255, 0.15);
-  --md-border-strong:   rgba(255, 255, 255, 1);
+  /* Accent */
+  --md-cyan:        #00FFFF;  /* highlight — on dark/photo only, never light bg */
+  --md-cyan-dark:   #01BBBB;  /* focus outlines, interactive states */
+
+  /* Borders */
+  --md-border-light: rgba(0, 0, 0, 0.12);
+  --md-border-dark:  rgba(240, 241, 244, 0.15);
+
+  /* Error */
+  --md-error: rgb(162, 0, 0);
+
+  /* Stance colors (content analysis UI only — not general brand) */
+  --md-left:        #4A90D9;
+  --md-left-bg:     rgba(74, 144, 217, 0.12);
+  --md-right:       #D94A4A;
+  --md-right-bg:    rgba(217, 74, 74, 0.12);
+  --md-center:      #666666;
+  --md-center-bg:   rgba(102, 102, 102, 0.12);
+
+  /* Semantic aliases */
+  --md-bg:          var(--md-offblack);
+  --md-text:        var(--md-offwhite);
+  --md-accent:      var(--md-cyan);
+  --md-outline:     var(--md-cyan-dark);
 }

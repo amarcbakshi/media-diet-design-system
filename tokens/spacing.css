@@ -1,25 +1,46 @@
 /**
- * Media Diet — Spacing Tokens
- * Generous space is a design choice. It amplifies the confrontational 
- * quality of the content. When in doubt, add more breathing room.
+ * Media Diet — Spacing, Motion & Border Tokens
+ * Sourced from app/assets/styles/_vars.scss
  */
 :root {
-  --md-space-1:   4px;
-  --md-space-2:   8px;
-  --md-space-3:  16px;
-  --md-space-4:  24px;
-  --md-space-5:  32px;
-  --md-space-6:  48px;
-  --md-space-7:  64px;
-  --md-space-8:  96px;
-  --md-space-9: 128px;
-  --md-space-10: 192px;
+  /* Spacing */
+  --md-space-xs:  6px;
+  --md-space-sm:  12px;
+  --md-space-md:  24px;
+  --md-space-lg:  32px;
+  --md-space-xl:  48px;
 
-  /* Motion */
-  --md-transition-fast:   0.15s ease;
-  --md-transition-medium: 0.25s ease;
+  /* Grid gutters */
+  --md-gutter-mobile:  16px;
+  --md-gutter-tablet:  18px;
+  --md-gutter-desktop: 18px;
 
-  /* Borders */
-  --md-border-hairline: 1px solid rgba(255, 255, 255, 0.15);
-  --md-border-cta:      1.5px solid currentColor;
+  /* Section padding */
+  --md-section-pad-mobile:  48px 8px;
+  --md-section-pad-tablet:  72px 12px;
+  --md-section-pad-desktop: 96px 24px;
+
+  /* Header heights */
+  --md-header-mobile:  50px;
+  --md-header-tablet:  55px;
+  --md-header-desktop: 60px;
+
+  /* Border radius (used on interactive elements and cards — NOT on images) */
+  --md-radius-sm: 8px;
+  --md-radius-md: 12px;
+  --md-radius-lg: 16px;
+
+  /* Motion speeds */
+  --md-speed-fast:   333ms;   /* $speed-demon */
+  --md-speed-normal: 666ms;   /* $speed-metal */
+  --md-speed-slow:   1000ms;  /* $speed-danger */
+
+  /* Easing functions */
+  --md-ease-evil:       cubic-bezier(0.666, 0, 0.333, 1);
+  --md-ease-steezy:     cubic-bezier(0.85, 0, 0.15, 1);
+  --md-ease-out:        cubic-bezier(0, 0, 0.666, 1);
+  --md-ease-out-quint:  cubic-bezier(0.22, 1, 0.36, 1);
+  --md-ease-out-back:   cubic-bezier(0.34, 1.56, 0.64, 1);
+  --md-ease-in-out:     cubic-bezier(0.65, 0, 0.35, 1);
+  --md-ease-bouncy:     cubic-bezier(0, 0.888, 0.333, 1.222);
 }
