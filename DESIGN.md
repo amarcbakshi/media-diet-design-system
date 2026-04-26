@@ -2,7 +2,7 @@
 
 > Primary reference for Claude Design. Drop into any project or paste during Claude Design setup. All values sourced directly from the live website codebase (`media-diet-website`, Lucas Drummond).
 
-**Site:** ourmediadiet.org · **Stack:** Nuxt 3 / SCSS · **Brand design:** Will Rhodes, Dec 2025
+**Site:** ourmediadiet.com · **Stack:** Nuxt 3 / SCSS · **Brand design:** Will Rhodes, Dec 2025
 
 ---
 
@@ -300,4 +300,4 @@ Usage: `@include respond-to($tablet) { ... }`
 
 ---
 
-*Brand design: Will Rhodes (willrhodes.blue) · Web: Lucas Drummond · Project: Amar C. Bakshi & Heidi Boisvert · ourmediadiet.org*
+*Brand design: Will Rhodes (willrhodes.blue) · Web: Lucas Drummond · Project: Amar C. Bakshi & Heidi Boisvert · ourmediadiet.com*
