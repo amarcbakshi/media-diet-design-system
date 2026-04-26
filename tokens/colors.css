@@ -1,0 +1,25 @@
+/**
+ * Media Diet — Color Tokens
+ * Three colors only: black, white, cyan.
+ * Cyan is a highlight only — minimal use, on black/photo backgrounds, never on white.
+ */
+:root {
+  --md-black:   #000000;
+  --md-white:   #FFFFFF;
+  --md-cyan:    #00FFFF;  /* highlight only — never on white backgrounds */
+
+  /* Utility grays — for text hierarchy, not surfaces */
+  --md-gray-10: #1A1A1A;
+  --md-gray-30: #4D4D4D;
+  --md-gray-60: #999999;
+  --md-gray-90: #E5E5E5;
+
+  /* Semantic */
+  --md-bg-primary:      var(--md-black);
+  --md-bg-secondary:    var(--md-gray-10);
+  --md-text-primary:    var(--md-white);
+  --md-text-secondary:  var(--md-gray-60);
+  --md-text-highlight:  var(--md-cyan);
+  --md-border-default:  rgba(255, 255, 255, 0.15);
+  --md-border-strong:   rgba(255, 255, 255, 1);
+}

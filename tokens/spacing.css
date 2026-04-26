@@ -1,0 +1,25 @@
+/**
+ * Media Diet — Spacing Tokens
+ * Generous space is a design choice. It amplifies the confrontational 
+ * quality of the content. When in doubt, add more breathing room.
+ */
+:root {
+  --md-space-1:   4px;
+  --md-space-2:   8px;
+  --md-space-3:  16px;
+  --md-space-4:  24px;
+  --md-space-5:  32px;
+  --md-space-6:  48px;
+  --md-space-7:  64px;
+  --md-space-8:  96px;
+  --md-space-9: 128px;
+  --md-space-10: 192px;
+
+  /* Motion */
+  --md-transition-fast:   0.15s ease;
+  --md-transition-medium: 0.25s ease;
+
+  /* Borders */
+  --md-border-hairline: 1px solid rgba(255, 255, 255, 0.15);
+  --md-border-cta:      1.5px solid currentColor;
+}

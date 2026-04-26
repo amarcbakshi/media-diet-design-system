@@ -1,0 +1,76 @@
+/**
+ * Media Diet — Typography Tokens
+ * Typeface: Suisse Int'l (Swiss International)
+ *   Bold   → headlines, taglines, promotional display
+ *   Medium → body copy, UI, formal documents, subheads
+ * Suisse Int'l font files are not included (licensed). Source: Swiss Typefaces.
+ * Fallbacks: 'Helvetica Neue', Arial, sans-serif
+ */
+
+@font-face {
+  font-family: 'SuisseIntl';
+  src: url('../fonts/SuisseIntl-Bold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SuisseIntl';
+  src: url('../fonts/SuisseIntl-Medium.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+:root {
+  /* Families */
+  --md-font-display: 'SuisseIntl', 'Helvetica Neue', Arial, sans-serif;
+  --md-font-body:    'SuisseIntl', 'Helvetica Neue', Arial, sans-serif;
+
+  /* Weights */
+  --md-weight-display: 700;  /* Bold — headlines, taglines */
+  --md-weight-body:    500;  /* Medium — body, UI, subheads */
+
+  /* Scale */
+  --md-text-hero:    clamp(48px, 8vw, 120px);   /* Full-bleed hero wordmark area */
+  --md-text-h1:      clamp(32px, 5vw, 72px);    /* Section headers */
+  --md-text-h2:      clamp(24px, 3vw, 48px);    /* Subsection headers */
+  --md-text-h3:      20px;                       /* Card titles */
+  --md-text-body:    16px;                       /* Body copy */
+  --md-text-caption: 13px;                       /* Metadata, captions */
+  --md-text-label:   11px;                       /* Button labels, tags */
+
+  /* Tracking */
+  --md-tracking-tight:  0.02em;
+  --md-tracking-normal: 0.04em;
+  --md-tracking-wide:   0.10em;  /* Button labels, caps labels */
+
+  /* Leading */
+  --md-leading-display: 1.0;
+  --md-leading-body:    1.55;
+  --md-leading-caption: 1.4;
+}
+
+/* Utility classes */
+.md-headline {
+  font-family: var(--md-font-display);
+  font-weight: var(--md-weight-display);
+  text-transform: uppercase;
+  letter-spacing: var(--md-tracking-normal);
+  line-height: var(--md-leading-display);
+}
+
+.md-body {
+  font-family: var(--md-font-body);
+  font-weight: var(--md-weight-body);
+  font-size: var(--md-text-body);
+  line-height: var(--md-leading-body);
+  max-width: 65ch;
+}
+
+.md-label {
+  font-family: var(--md-font-body);
+  font-weight: var(--md-weight-body);
+  font-size: var(--md-text-label);
+  text-transform: uppercase;
+  letter-spacing: var(--md-tracking-wide);
+}
